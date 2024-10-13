@@ -1,0 +1,12 @@
+[Unit]
+Description=Electron App to show UV Index on GUI
+After=network.target
+
+[Service]
+ExecStart=/home/pi/AppImages/uvindex-electron
+Restart=always
+User=pi
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=default.target

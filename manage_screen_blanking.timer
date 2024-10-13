@@ -1,0 +1,9 @@
+[Unit]
+Description=Run screen blanking management script at 9 PM and 6 AM daily
+
+[Timer]
+OnCalendar=*-*-* 06,19:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

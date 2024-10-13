@@ -1,0 +1,8 @@
+[Unit]
+Description=Manage screen blanking
+
+[Service]
+Type=oneshot
+User=pi
+Environment=DISPLAY=:0
+ExecStart=/home/pi/scripts/manage_screen_blanking.sh
